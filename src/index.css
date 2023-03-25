@@ -9,3 +9,13 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-family: jost,Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 1060px) {
+    .centered{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+  }
+

@@ -5,9 +5,9 @@ const details = [{name:"QSR",img:"Donuts.jpg"},{name:"HEALTHCARE",img:"Hospital.
 
 const Industries = () => {
   return (
-    <div>
+    <div className='mb-16'>
 
-  <div className='flex flex-col justify-center items-center'>
+  <div className='flex flex-col justify-center items-center '>
     <h2 className=' text-2xl ss:text-3xl md:text-5xl mb-7 py-8 text-textOrange'>NY ENGINEERS</h2>
     <p className='text-lg ss:text-xl  mb-6 text-textGrey'>QSR  HEALTHCARE  FITNESS  PET CARE  BANKS  RETAIL</p>
   </div>

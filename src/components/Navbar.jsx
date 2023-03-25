@@ -3,7 +3,7 @@ import useMediaQuery from '../hooks/UseMediaquery';
 import {Plus} from '@styled-icons/bootstrap';
 import { Close,Menu, } from '@styled-icons/material';
 import Dropdown from './Dropdown';
-import {ChevronDown} from '@styled-icons/bootstrap/ChevronDown';
+import {ChevronDown,ChevronRight} from '@styled-icons/bootstrap';
 import data from './Navbardata';
 
 const Navbar = () => {
@@ -25,12 +25,12 @@ const Navbar = () => {
           isAboveMediumScreen? (<div className='flex gap-7 items-center text-xl font'>
             
             <div className='group/item1'><a >Engineering <ChevronDown size={12}></ChevronDown></a>
-            {/* <div className=' group-hover/item1:scale-100 scale-0 p-10 bg-white absolute'>
+            <div className=' group-hover/item1:scale-100 scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
         {
           
-          EngDrop.map((item)=><a className='hover:text-textOrange text-black flex flex-col z-2000 '><p>{item} </p></a>)
+          EngDrop.map((item)=><a className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item} </p>  <ChevronRight size={20}></ChevronRight></a>)
         }
-        </div> */}
+        </div>
             </div>
             <div><a>Projects</a></div>
             <div><a>On Demand</a></div>

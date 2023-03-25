@@ -9,7 +9,7 @@ const Footer = () => {
     const buttonStyle = 'text-xl hover:bg-textOrange transition duration-200 border-solid border-[2px] border-textOrange '
     return (
     <div className=' bg-footerBlack font-jost text-white  p-10'>
-       <div className='grid grid-cols-3 items-stretch w-2/3 mx-auto'>
+       <div className='md:grid md:grid-cols-3 items-stretch flex flex-col gap-9 w-2/3 mx-auto'>
 
        
         <div className='  flex flex-col gap-2 items-stretch'>
@@ -25,7 +25,7 @@ const Footer = () => {
 
         </div>
         <div className=' max-w-max flex flex-col gap-2 items-stretch'>
-            <h4 className={headerStyle}>ENGINEERING</h4>
+            <h4 className={headerStyle}>COMPANY</h4>
             <div className=' w-4 h-[1.5px] bg-textOrange'></div>
             <div className={`flex flex-col ${itemStyle}`}>
             <a>CAREER </a>
