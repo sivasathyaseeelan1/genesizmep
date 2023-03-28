@@ -8,6 +8,12 @@ module.exports = {
         'textOrange': '#FE0000',
         'backgroundGrey':'#62656C',
         'footerBlack':'#232323',
+        'bgGrey':	'#6A6D77',
+        'bgOrange':'#F3AA5F',
+        'bgOrange2':'#E97000',
+        'bgBrown':'#5a2d03',
+        'bgWhite':"#F1F1F1",
+        'bgGrey2':"#3f3E3D"
       }
       
     },

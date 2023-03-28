@@ -15,7 +15,7 @@ const Dropdown = ({item}) => {
 
    
     <div className=' border-dotted border-white border-[1px] items-stretch flex justify-between '>
-    <a>{item.name}</a>
+    <a href={item.url}>{item.name}</a>
     
     {
       item.isdrop?<span className=' border-white border-dotted border-[1px] p-1'>

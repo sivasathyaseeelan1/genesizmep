@@ -4,17 +4,21 @@ const data = [
         data:[{
             name:"HVAC",
             isdrop:false,
+            url:"/mechanical-hvac",
         },{
-            name: "five fields",
+            name: "fire Protection",
             isdrop:false,
+            url:"/fireprotection",
         },
         {
             name: "electrical",
             isdrop:false,
+            url:"/electrical",
         },
         {
             name:"plumber",
             isdrop:false,
+            url:"/plumbing",
         }
     ],
     isdrop: true,
@@ -22,22 +26,27 @@ const data = [
     {
         name:"Projects",
         isdrop:false,
+        url:"/projects",
     },
     {
         name:"Ondemand",
         isdrop:false,
+        url:"/projects",
     },
     {
         name:"Resources",
         isdrop:false,
+        url:"/projects",
     },
     {
         name:"About us",
         isdrop:false,
+        url:"/projects",
     },
     {
         name:"Contact",
         isdrop:false,
+        url:"/projects",
     },
 
 
