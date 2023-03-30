@@ -16,7 +16,7 @@ const Navbar = () => {
     <div>
 
     
-    <div className='bg-black text-white flex md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-1000'>
+    <div className='bg-black text-white fixed top-0 left-0 z-50 flex md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-1000'>
         <div className=' max-w-[280px]'>
          <a><h1 className='text-lg ss:text-2xl'>Nearby engineers</h1> </a>
          {/* <img src='public/assets/homepage/New-NY-Logos-03.webp'></img> */}

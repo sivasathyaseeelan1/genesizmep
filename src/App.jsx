@@ -5,6 +5,7 @@ import OtherPages from './pages/OtherPages';
 import AboutUs from './pages/AboutUs';
 import Navbar from './components/Navbar';
 import Footer from './containers/Homepage/Footer';
+import ContactPage from './pages/ContactPage';
 
 const App = () => {
   
@@ -44,7 +45,7 @@ const App = () => {
         <Route path='/plumbing' element={<OtherPages data={landingData[2]}></OtherPages>}></Route>
         <Route path='/fireprotection' element={<OtherPages data={landingData[3]}></OtherPages>}></Route>
         <Route path='/about' element={<AboutUs></AboutUs>}></Route>
-        
+        <Route path='/contact' element={<ContactPage></ContactPage>}></Route>
       </Routes>
       <Footer></Footer>
       </BrowserRouter>

@@ -30,7 +30,7 @@ const Contact = ({ data, handleSave, }) => {
   });
   
     return (
-    <div className="flex flex-col justify-center items-center px-5 mb-8">
+    <div className="flex flex-col justify-center items-center px-5 py-4 mb-8">
       <div className='flex justify-between items-center mb-5'>
         <h3 className=" text-xl ss:text-2xl font-jost font-bold" >
         Prefer talking to our experts first? Fill this form to get a callback in 24 hours!
