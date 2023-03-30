@@ -6,17 +6,17 @@ const data = [
             isdrop:false,
             url:"/mechanical-hvac",
         },{
-            name: "fire Protection",
+            name: "Fire Protection",
             isdrop:false,
             url:"/fireprotection",
         },
         {
-            name: "electrical",
+            name: "Electrical",
             isdrop:false,
             url:"/electrical",
         },
         {
-            name:"plumber",
+            name:"Plumber",
             isdrop:false,
             url:"/plumbing",
         }
@@ -25,8 +25,38 @@ const data = [
     },
     {
         name:"Projects",
-        isdrop:false,
+        isdrop:true,
         url:"/projects",
+        data:[{
+            name:"Hotel",
+            isdrop:false,
+            url:"/projects/hotel",
+        },{
+            name: "Office",
+            isdrop:false,
+            url:"/projects/office",
+        },
+        {
+            name: "Education",
+            isdrop:false,
+            url:"/projects/education",
+        },
+        {
+            name:"Airport",
+            isdrop:false,
+            url:"/projects/airport",
+        },
+        {
+            name:"Malls and stadium",
+            isdrop:false,
+            url:"/projects/mall-stadium",
+        },
+        {
+            name:"Healthcare",
+            isdrop:false,
+            url:"/projects/healthcare",
+        }
+    ],
     },
     {
         name:"Ondemand",

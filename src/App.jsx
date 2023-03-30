@@ -2,6 +2,10 @@ import React from 'react'
 import Homepage from './pages/HomePage'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import OtherPages from './pages/OtherPages';
+import AboutUs from './pages/AboutUs';
+import Navbar from './components/Navbar';
+import Footer from './containers/Homepage/Footer';
+
 const App = () => {
   
   const landingData = [{name:"MECHANICAL - HVAC ENGINEERING SERVICES",
@@ -25,7 +29,7 @@ const App = () => {
   return (
     <div>
          <BrowserRouter>
-
+    <Navbar></Navbar>
       <Routes>
         <Route
           path='/'
@@ -33,15 +37,16 @@ const App = () => {
         ></Route>
        
         <Route
-          path='/mechanical-hvac'
+          path='/hvac'
           element={<OtherPages data={landingData[0]}></OtherPages>}
         ></Route>
         <Route path='/electrical' element={<OtherPages data={landingData[1]}></OtherPages>}></Route>
         <Route path='/plumbing' element={<OtherPages data={landingData[2]}></OtherPages>}></Route>
         <Route path='/fireprotection' element={<OtherPages data={landingData[3]}></OtherPages>}></Route>
-
+        <Route path='/about' element={<AboutUs></AboutUs>}></Route>
         
       </Routes>
+      <Footer></Footer>
       </BrowserRouter>
     </div>
   )

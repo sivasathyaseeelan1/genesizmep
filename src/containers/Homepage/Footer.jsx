@@ -9,18 +9,34 @@ const Footer = () => {
     const buttonStyle = 'text-xl hover:bg-textOrange transition duration-200 border-solid border-[2px] border-textOrange '
     return (
     <div className=' bg-footerBlack font-jost text-white  p-10'>
-       <div className='md:grid md:grid-cols-3 items-stretch flex flex-col gap-9 w-2/3 mx-auto'>
+       <div className='md:grid md:grid-cols-4 items-stretch flex flex-col gap-9 w-2/3 mx-auto'>
 
        
         <div className='  flex flex-col gap-2 items-stretch'>
             <h4 className={headerStyle}>ENGINEERING</h4>
             <div className=' w-4 h-[1.5px] bg-textOrange'></div>
-            <div className={`flex flex-col ${itemStyle}`}>
-            <a href='#rrrr'>MECHANICAL- HVAC </a>
-            <a>ELECTRICAL</a>
-            <a>PLUMBING</a>
-            <a> FIRE PROTECTION</a>
-            <a>FRANCHISE DESIGN</a>
+            <div className={`flex flex-col uppercase ${itemStyle}`}>
+            <a href='/hvac'>HVAC </a>
+            <a href='/fireprotection'> FIRE PROTECTION</a>
+            <a href='/electrical'>ELECTRICAL</a>
+            <a href='/plumbing'>PLUMBING</a>
+            
+            </div>
+
+        </div>
+        
+        <div className='  flex flex-col gap-2 items-stretch uppercase'>
+            <h4 className={headerStyle}>projects</h4>
+            <div className=' w-4 h-[1.5px] bg-textOrange'></div>
+            <div className={`flex flex-col  ${itemStyle}`}>
+            <a href='/projects/hotel'>hotel </a>
+            <a href='/projects/office'>office</a>
+            <a href='/projects/education'>education</a>
+            <a href='/projects/airport'>airport</a>
+            <a href='/projects/mall-stadium'>malls and stadium</a>
+            <a href='/projects/healthcare'> healthcare</a>
+            
+            
             </div>
 
         </div>

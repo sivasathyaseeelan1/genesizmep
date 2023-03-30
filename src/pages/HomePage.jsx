@@ -15,7 +15,7 @@ import Footer from '../containers/Homepage/Footer'
 const Homepage = () => {
   return (
     <div>
-      <Navbar></Navbar>
+  
       <LandingPage></LandingPage>
       <AboutUs></AboutUs>
       <ClientPage></ClientPage>
@@ -23,7 +23,7 @@ const Homepage = () => {
       <Working></Working>
       <OnDemandEng></OnDemandEng>
       <Contact></Contact>
-      <Footer></Footer>
+    
       
     </div>
   )

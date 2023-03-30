@@ -14,7 +14,7 @@ const OtherPages = ({data}) => {
   
     return (
     <div>
-        <Navbar></Navbar>
+    
         <LandingPage props={data} ></LandingPage>
         <SecPage></SecPage>
         <ThirdPage></ThirdPage>
@@ -22,7 +22,7 @@ const OtherPages = ({data}) => {
         <FifthPage></FifthPage>
         <SixthPage></SixthPage>
         <SeventhPage></SeventhPage>
-        <Footer></Footer>
+        
     </div>
   )
 }

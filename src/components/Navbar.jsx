@@ -10,7 +10,7 @@ const Navbar = () => {
   const [isMenuOpen,setIsMenuOpen] = useState(false);
   const isAboveMediumScreen = useMediaQuery("(min-width:1050px)");
   
-  const EngDrop = ["engineering","engineering","engineering","engineering",]
+  // const EngDrop = ["engineering","engineering","engineering","engineering",]
 
   return (
     <div>
@@ -24,18 +24,27 @@ const Navbar = () => {
         {
           isAboveMediumScreen? (<div className='flex gap-7 items-center text-xl font'>
             
+          <div><a href='/'>Home </a></div>
             <div className='group/item1'><a >Engineering <ChevronDown size={12}></ChevronDown></a>
             <div className=' group-hover/item1:scale-100 scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
         {
           
-          EngDrop.map((item)=><a className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item} </p>  <ChevronRight size={20}></ChevronRight></a>)
+          data[0].data.map((item)=><a className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item.name} </p>  <ChevronRight size={20}></ChevronRight></a>)
         }
         </div>
             </div>
-            <div><a>Projects</a></div>
-            <div><a>On Demand</a></div>
-            <div><a>Resources</a></div>
-            <div><a>About us</a></div>
+            
+            <div className='group/item1'><a >Projects <ChevronDown size={12}></ChevronDown></a>
+            <div className=' group-hover/item1:scale-100 scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
+        {
+          
+          data[1].data.map((item)=><a className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item.name} </p>  <ChevronRight size={20}></ChevronRight></a>)
+        }
+        </div>
+            </div>
+          
+
+            <div><a href='/about'>About us</a></div>
             <div><a>contact</a></div>
             <div className='rounded-3xl  py-1 hover:bg-textOrange cursor-pointer px-3  border-solid border-[2px] border-textOrange '><a>request a proposal</a></div>
         </div>): (<>
