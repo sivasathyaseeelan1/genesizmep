@@ -4,7 +4,7 @@ export const projectData = [
         details:[
             {
                 name: "The Leela Kovalam",
-                img:"../public/assets/Projects/leela-kovalam.jpg",
+                img:"../public/assets/Projects/hotel/leela-kovalam.jpg",
                 location:"The Leela Kovalam, A Raviz Hotel, Beach Rd, Thiruvananthapuram, Kerala 695527",
                 budget:"298789",
                 projectArea:"chennai",
@@ -13,7 +13,7 @@ export const projectData = [
             },
             {
                 name: "TAMARA HOTEL - 5 STAR, TRIVANDRUM",
-                img:"../public/assets/Projects/tamara-trivandrum.jpg",
+                img:"../public/assets/Projects/hotel/tamara-trivandrum.jpg",
                 location:"Oruvathilkotta, Aakkulam, Thiruvananthapuram, Kerala 695029",
                 budget:"298789",
                 projectArea:"chennai",
