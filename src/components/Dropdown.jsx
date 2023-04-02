@@ -11,14 +11,14 @@ const Dropdown = ({item}) => {
   
   
     
-    <div>
+    <div className=' sticky'>
 
    
-    <div className=' border-dotted border-white border-[1px] items-stretch flex justify-between '>
+    <div className=' border-dotted border-white sticky z-50 border-[1px] items-stretch flex justify-between '>
     <a href={item.url}>{item.name}</a>
     
     {
-      item.isdrop?<span className=' border-white border-dotted border-[1px] p-1'>
+      item.isdrop?<span className=' border-white border-dotted sticky z-40 border-[1px] p-1'>
       {!open?
     <Plus size={30} onClick={()=>setOpen(true)}></Plus>:<FileMinus size={30} onClick={()=>setOpen(false)}></FileMinus>}</span>:<></>
     }

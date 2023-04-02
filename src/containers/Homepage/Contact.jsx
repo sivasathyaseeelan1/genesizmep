@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import * as Yup from 'yup';
 
 const Contact = ({ data, handleSave, }) => {
-    const InputStyles = "bottom-1 rounded-md p-2  border-solid border-[2px]";
+    const InputStyles = " relative bottom-1 rounded-md p-2  border-solid border-[2px]";
   const ContactSchema = Yup.object().shape({
     firstName: Yup.string()
       .min(2, 'Too Short!')
@@ -78,8 +78,8 @@ const Contact = ({ data, handleSave, }) => {
         <div className=" flex justify-center flex-col gap-4 md:grid md:grid-cols-2 md:gap-y-4 py-5 md:gap-x-5 md:grid-flow-row p-8">
 
        
-             
-              <input
+             <div className=" relative">
+             <input
                 id='firstName'
                 type='text'
                 name='firstName'
@@ -92,10 +92,12 @@ const Contact = ({ data, handleSave, }) => {
                   >
                   </input>
                   {errors.firstName && touched.firstName ? (
-             <label for="firstName">{errors.firstName}</label>
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="firstName">{errors.firstName}</label>
            ) : null}
             
-             
+             </div>
+              
+             <div className="relative">
              <input
                id='lastName'
                type='text'
@@ -107,11 +109,13 @@ const Contact = ({ data, handleSave, }) => {
                placeholder='lastName*'
               
              />
-              {errors.lastName && touched.lastName ? (
-             <div>{errors.lastName}</div>
+             {errors.lastName && touched.lastName ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="lastName">{errors.lastName}</label>
            ) : null}
-        
+             </div>
              
+        
+             <div className="relative">
              <input
                id='email'
                type="email"
@@ -123,11 +127,12 @@ const Contact = ({ data, handleSave, }) => {
                placeholder='email*'
               
              />
-             {errors.email && touched.email ? (
-             <div>{errors.email}</div>
+            {errors.email && touched.email ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="email">{errors.email}</label>
            ) : null}
-          
-            
+             </div>
+             
+            <div className="relative">
             <input
               id='phoneNumber'
               type='tel'
@@ -139,10 +144,16 @@ const Contact = ({ data, handleSave, }) => {
               placeholder='phoneNumber*'
              
             />
-             {errors.phoneNumber && touched.phoneNumber ? (
-             <div>{errors.phoneNumber}</div>
+            {errors.phoneNumber && touched.phoneNumber ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="phoneNumber">{errors.phoneNumber}</label>
            ) : null}
+            </div>
+
+
+           
              
+             
+             <div className="relative col-start-1 col-end-3">
              <input
                id='companyName'
                type='text'
@@ -150,14 +161,16 @@ const Contact = ({ data, handleSave, }) => {
                onChange={handleChange}
                onBlur={handleBlur}
                value={values.companyName}
-               className={`${InputStyles} col-start-1 col-end-3 `}
+               className={`${InputStyles} w-full `}
                placeholder='companyName*'
               
              />
-            {errors.companyName && touched.companyName ? (
-             <div>{errors.companyName}</div>
+           {errors.companyName && touched.companyName ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="companyName">{errors.companyName}</label>
            ) : null}
+             </div>
             
+            <div className="relative">
             <input
               id='city'
               type="text"
@@ -169,10 +182,12 @@ const Contact = ({ data, handleSave, }) => {
               placeholder='city*'
              
             />
-           {errors.city && touched.city ? (
-             <div>{errors.city}</div>
+         {errors.city && touched.city ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="city">{errors.city}</label>
            ) : null}
+            </div>
             
+            <div className=" relative">
             <input
               id='state'
               type='text'
@@ -184,25 +199,34 @@ const Contact = ({ data, handleSave, }) => {
               placeholder='state*'
              
             />
-          {errors.state && touched.state ? (
-             <div>{errors.state}</div>
+       {errors.state && touched.state ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="state">{errors.state}</label>
            ) : null}
-             
+            </div>
+          
+             <div className=" col-start-1 col-end-3 relative">
              <textarea
                id='details'
                name='details'
                onChange={handleChange}
                onBlur={handleBlur}
                value={values.details}
-               className={`${InputStyles}  col-start-1 col-end-3`}
+               className={`${InputStyles}  w-full`}
                placeholder='What can we help you with?'
                   maxLength={30}
                   
              />
-                {errors.details && touched.details ? (
-             <div>{errors.details}</div>
+             {errors.details && touched.details ? (
+             <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="details">{errors.details}</label>
            ) : null}
+             </div>
+            
+         
+         
+         
+         
          </div>
+
               <button
                 className=' bg-textOrange mx-auto text-white text-lg ss:text-xl font-jost px-5 py-3 hover:scale-110 duration-200 rounded-xl max-w-max' 
                 type='submit'

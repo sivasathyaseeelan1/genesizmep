@@ -9,7 +9,7 @@ const Member = () => {
         <h5 className=' text-2xl text-center font-semibold font-jost'>
         Contact us if you would like to discuss any projects you feel we can help with.
         </h5>
-        <button className=' text-center border-solid border-[1px] border-black outline-none bg-white text-black hover:bg-black hover:text-white font-jost font-semibold text-2xl px-20 py-2'>Get In Touch</button>
+       <a href='/contact'> <button className=' text-center border-solid border-[1px] border-black outline-none bg-white text-black hover:bg-black hover:text-white font-jost font-semibold text-2xl px-20 py-2'>Get In Touch</button></a>
     </div>
   )
 }

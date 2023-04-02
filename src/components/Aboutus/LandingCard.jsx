@@ -2,7 +2,7 @@ import React from 'react'
 
 const LandingCard = ({data}) => {
   return (
-   <div className='flex md:grid md:grid-cols-3 flex-col gap-1 z-50'>
+   <div className='flex md:grid md:grid-cols-3 flex-col gap-1 z-30'>
 
   
    <div className={` bg-textOrange  text-white px-2 py-2 text-center`}>

@@ -13,9 +13,9 @@ module.exports = {
         'bgOrange2':'#E97000',
         'bgBrown':'#5a2d03',
         'bgWhite':"#F1F1F1",
-        'bgGrey2':"#3f3E3D"
+        'bgGrey2':"#3f3E3D",
+        'bgGrey3': "#EEEEEE",
       }
-      
     },
     backgroundImage: (theme) => ({
       "gradient-rainbow":

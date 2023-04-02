@@ -70,7 +70,7 @@ const ContactForm = ({ data, handleSave, }) => {
             className='   max-w-screen-ss justify-center flex flex-col py-5 rounded-2xl'
           >
         
-        <div className=" grid grid-cols-6 gap-x-3 gap-y-3 grid-rows-3">
+        <div className=" flex flex-col md:grid md:grid-cols-6 gap-x-3 gap-y-3 md:grid-rows-3">
 
        
              
@@ -87,7 +87,7 @@ const ContactForm = ({ data, handleSave, }) => {
                   >
                   </input>
                   {errors.firstName && touched.firstName ? (
-             <label for="firstName">{errors.firstName}</label>
+             <label for="firstName" className=" text-white">{errors.firstName}</label>
            ) : null}
             
              

@@ -8,7 +8,7 @@ import Working from '../containers/Homepage/Working'
 import OnDemandEng from '../containers/Homepage/OnDemanEng'
 import Contact from '../containers/Homepage/Contact'
 import Footer from '../containers/Homepage/Footer'
-
+import OurService from '../containers/Homepage/OurService'
 
 
 
@@ -19,10 +19,12 @@ const Homepage = () => {
       <LandingPage></LandingPage>
       <AboutUs></AboutUs>
       <ClientPage></ClientPage>
+      <OurService></OurService>
       <Industries></Industries>
       <Working></Working>
       <OnDemandEng></OnDemandEng>
       <Contact></Contact>
+
     
       
     </div>

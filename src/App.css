@@ -1,0 +1,126 @@
+.mainlanding{
+    position: relative;
+}
+
+.mainlanding::before {    
+    content: "";
+    background-image: url("../public/assets/homePage/img1.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+   
+}
+
+.mainlanding1::before {    
+    content: "";
+    background-image: url("../public/assets/homePage/frame2.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+   
+}
+.mainlanding2::before {    
+    content: "";
+    background-image: url("../public/assets/homePage/frame3.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+   
+}
+.projectLanding::before {    
+    content: "";
+    background-image: url("../public/assets/ourprojects.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+    
+   
+}
+
+.hvac::before{
+    content: "";
+    background-image: url("../public/assets/homePage/OurServices/HVAC.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.electrical::before{
+    content: "";
+    background-image: url("../public/assets/homePage/OurServices/Electrical.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+.fire::before{
+    content: "";
+    background-image: url("../public/assets/homePage/OurServices/Fire.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.plumbing::before{
+    content: "";
+    background-image: url("../public/assets/homePage/OurServices/Plumbing.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+.child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .arrow1{
+    position: absolute;
+    top: 50%;
+
+    transform: translate(0, -50%);
+  }
+  .arrow2{
+    position: absolute;
+    top: 50%;
+    
+    transform: translate(0, -50%);
+  }
+
+  .nav{
+    z-index: 100;
+  }

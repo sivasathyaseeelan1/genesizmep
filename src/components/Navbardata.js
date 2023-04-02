@@ -1,10 +1,16 @@
 const data = [
     {
+        name:"Home",
+        isdrop:false,
+        url:"/",
+    },
+    
+    {
         name: "Engineering",
         data:[{
             name:"HVAC",
             isdrop:false,
-            url:"/mechanical-hvac",
+            url:"/hvac",
         },{
             name: "Fire Protection",
             isdrop:false,
@@ -30,51 +36,46 @@ const data = [
         data:[{
             name:"Hotel",
             isdrop:false,
-            url:"/projects/hotel",
+            url:"/hotel",
         },{
             name: "Office",
             isdrop:false,
-            url:"/projects/office",
+            url:"/office",
         },
         {
             name: "Education",
             isdrop:false,
-            url:"/projects/education",
+            url:"/education",
         },
         {
             name:"Airport",
             isdrop:false,
-            url:"/projects/airport",
+            url:"/airport",
         },
         {
             name:"Malls and stadium",
             isdrop:false,
-            url:"/projects/mall-stadium",
+            url:"/mall-stadium",
         },
         {
             name:"Healthcare",
             isdrop:false,
-            url:"/projects/healthcare",
+            url:"/healthcare",
         }
     ],
     },
     {
-        name:"Ondemand",
-        isdrop:false,
-        url:"/projects",
-    },
-    {
-        name:"Resources",
-        isdrop:false,
-        url:"/projects",
-    },
-    {
         name:"About us",
         isdrop:false,
-        url:"/projects",
+        url:"/about",
     },
     {
         name:"Contact",
+        isdrop:false,
+        url:"/contact",
+    },
+    {
+        name:" REQUEST A PROPOSAL",
         isdrop:false,
         url:"/projects",
     },

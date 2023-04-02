@@ -6,7 +6,7 @@ const Footer = () => {
   
     const headerStyle = 'md:text-2xl text-xl font-medium';
     const itemStyle = 'text-sm ss:text-sm'
-    const buttonStyle = 'text-xl hover:bg-textOrange transition duration-200 border-solid border-[2px] border-textOrange '
+    const buttonStyle = 'text-sm py-2 hover:bg-textOrange min-w-max transition duration-200 border-solid border-[2px] border-textOrange '
     return (
     <div className=' bg-footerBlack font-jost text-white  p-10'>
        <div className='md:grid md:grid-cols-4 items-stretch flex flex-col gap-9 w-2/3 mx-auto'>
@@ -53,9 +53,9 @@ const Footer = () => {
           
 
         </div>
-        <div className=' max-w-max flex flex-col gap-2 justify-start items-stretch'>
-            <button className={buttonStyle}>REQUEST A PROPOSAL</button>
-            <button className={buttonStyle}>CONTACT</button>
+        <div className=' max-w-max flex flex-col gap-2 justify-start items-stretch justify-items-stretch'>
+           <button className={buttonStyle}> <a href='/requestaproposal'>REQUEST A PROPOSAL</a></button>
+<button className={buttonStyle}><a className=' text-sm' href='/contact'>CONTACT</a></button>
             <p>382 NE 191st St , Suite 49674
 Miami, Florida 33179</p>
            

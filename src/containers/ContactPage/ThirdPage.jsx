@@ -2,7 +2,7 @@ import React from 'react'
 
 const ThirdPage = () => {
   return (
-    <div className=' flex flex-col md:grid md:grid-cols-2 items-stretch'>
+    <div className=' flex flex-col md:grid md:grid-cols-2 items-stretch  justify-items-stretch'>
         <img src='public/assets/contactPage/contactP.webp'></img>
         <div className=' font-jost text-2xl text-white bg-black py-7 text-center px-5 flex flex-col gap-4 justify-center'>
             <p>We work to provide you with the best MEP engineering consulting services available. If you have any further inquiries or questions, we are happy to provide you with more information.</p>

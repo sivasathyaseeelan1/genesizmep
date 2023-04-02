@@ -16,9 +16,9 @@ const Navbar = () => {
     <div>
 
     
-    <div className='bg-black text-white fixed top-0 left-0 z-50 flex md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-1000'>
+    <div className='bg-black text-white sticky md:fixed top-0 left-0  nav flex md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-50 '>
         <div className=' max-w-[280px]'>
-         <a><h1 className='text-lg ss:text-2xl'>Nearby engineers</h1> </a>
+         <a className=' flex gap-3 items-center' href='/'><img className=' h-12 w-12' src='public/assets/logo1.png'></img><h1 className='text-lg ss:text-2xl'>Genesiz MEP</h1> </a>
          {/* <img src='public/assets/homepage/New-NY-Logos-03.webp'></img> */}
         </div>
         {
@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className=' group-hover/item1:scale-100 scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
         {
           
-          data[0].data.map((item)=><a className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item.name} </p>  <ChevronRight size={20}></ChevronRight></a>)
+          data[1].data.map((item)=><a href={item.url} className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item.name} </p> </a>)
         }
         </div>
             </div>
@@ -38,14 +38,14 @@ const Navbar = () => {
             <div className=' group-hover/item1:scale-100 scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
         {
           
-          data[1].data.map((item)=><a className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item.name} </p>  <ChevronRight size={20}></ChevronRight></a>)
+          data[2].data.map((item)=><a href={item.url} className='hover:text-textOrange text-black flex justify-between z-2000 '><p>{item.name} </p>  </a>)
         }
         </div>
             </div>
           
 
             <div><a href='/about'>About us</a></div>
-            <div><a>contact</a></div>
+            <div><a href='/contact'>contact</a></div>
             <div className='rounded-3xl  py-1 hover:bg-textOrange cursor-pointer px-3  border-solid border-[2px] border-textOrange '><a>request a proposal</a></div>
         </div>): (<>
           {
@@ -58,13 +58,13 @@ const Navbar = () => {
         }
         
         
-    
+      
+       
     
     </div>
-
-        {
+    {
           isMenuOpen && !isAboveMediumScreen && (
-            <div className={` w-full bg-black text-white text-lg ss:text-xl transition duration-10000 ${(isMenuOpen)? "scale-100":"scale-0"} transition-all duration-300 ease-in `}>
+            <div className={` w-full bg-black text-white nav text-lg sticky ss:text-xl transition duration-10000 ${(isMenuOpen)? "scale-100":"scale-0"} transition-all duration-300 ease-in `}>
             {
               data.map((item)=><Dropdown item={item}></Dropdown>)
             }

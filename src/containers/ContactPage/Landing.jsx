@@ -3,7 +3,7 @@ import Contact from '../Homepage/Contact'
 
 const Landing = () => {
   return (
-    <div className='flex flex-col gap-10 md:grid md:grid-cols-2  pt-20'>
+    <div className='flex flex-col gap-10 md:grid md:grid-cols-2  pt-[75px] md:py-20'>
         <div className=' bg-black py-10 col-start-1 col-end-2 '>
             <div className=' py-4 px-2  bg-textOrange text-white text-center '>
                 <h1 className=' font-anton text-6xl mb-4'>OUR CONTACT</h1>

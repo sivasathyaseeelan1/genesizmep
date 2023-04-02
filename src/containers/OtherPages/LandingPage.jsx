@@ -2,13 +2,11 @@ import React from 'react'
 
 const LandingPage = ({props}) => {
   return (
-    <div className=' flex flex-col md:grid md:grid-cols-2 items-stretch py-20 px-10'>
-        <div>
-        <img src="public/assets/OtherPages/hvac.png"></img>
-        </div>
-        <div className=' flex flex-col gap-3 text-left'>
-            <h6 className=' text-2xl font-jost font-semibold'>NY ENGINEERS</h6>
-            <h1 className=' uppercase text-6xl'>
+    <div className={`flex flex-col  items-stretch py-20 px-10 md:mt-40 ${props.className}`}  >
+        
+        <div className=' flex flex-col gap-3 text-left opacity-100 z-10 '>
+            <h6 className=' text-2xl font-jost font-bold'>NY ENGINEERS</h6>
+            <h1 className=' uppercase text-6xl font-bold'>
                 {props.name}
             </h1>
             <h6 className=' text-2xl font-thin font-jost'>{props.details}</h6>

@@ -3,8 +3,8 @@ import Landing from '../containers/ContactPage/Landing';
 import SecondPage from '../containers/ContactPage/secondPage';
 import ThirdPage from '../containers/ContactPage/ThirdPage';
 import FourthPage from '../containers/ContactPage/FourthPage';
-// import LastPage from '../containers/ContactPage/LastPage';
 
+import FifthPage from '../containers/ContactPage/FifthPage';
 
 
 const ContactPage = () => {
@@ -14,9 +14,9 @@ const ContactPage = () => {
     <SecondPage></SecondPage>
     <ThirdPage></ThirdPage>
 <FourthPage></FourthPage>
-{/* <LastPage></LastPage> */}
 
 
+{/* <FifthPage></FifthPage> */}
 
     </div>
   )

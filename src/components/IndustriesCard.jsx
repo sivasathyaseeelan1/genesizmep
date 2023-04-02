@@ -1,16 +1,19 @@
 import React from 'react'
 
-const Card = (props) => {
+const Card = ({props}) => {
   return (
-    <div className='relative' >
-    <img src={`public/assets/homePage/industries/${props.img}`} className=' hover:scale-105 transition duration-500 cursor-pointer w-full'>
+    
+    <div className='relative'  >
+    <img src={`public/assets/homePage/industries/${props.img}`} className=' grayscale max-h-[300px] min-h-full hover:scale-105 transition duration-500 cursor-pointer w-full'>
         
     </img>
-    <span className='hover:bg-white centered relative translate-x-[-50%] translate-y-[-50%] md:bottom-[45%] md:left-[45%] p-2 max-w-max  hover:text-black text-2xl text-white bg-black'>
+     <a href={props.link} className='hover:bg-white centered child uppercase items-stretch justify-items-stretch  p-2 max-w-max  hover:text-black text-lg cursor-pointer text-white bg-black'>
             {props.name}
-        </span>
+        </a>
     </div>
+    
   )
 }
-
-export default Card
+// translate-x-[-50%] translate-y-[-50%] md:bottom-[45%] md:left-[45%]
+// top-[50%] md:top-[45%] left-[50%] md:left-[35%]
+export default Card ;

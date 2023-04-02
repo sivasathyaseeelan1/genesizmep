@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from "../../components/IndustriesCard"
 
-const details = [{name:"QSR",img:"Donuts.jpg"},{name:"HEALTHCARE",img:"Hospital.jpg"},{name:"FITNESS",img:"Fitness.jpg"},{name:"PET CARE",img:"Pet.jpg"},{name:"BANKS",img:"Banks.jpg"},{name:"RETAIL",img:"Retail.webp"},]
+const details = [{name:"hotel",img:"hotel.jpg", link:"/hotel"},{name:"HEALTHCARE",img:"Hospital.jpg",link:"/hotel"},{name:"airport",img:"airport.jpg",link:"/airport"},{name:"malls and stadium",img:"mall.jpg",link:"/mall-stadium"},{name:"office",img:"office.jpg",link:"/office"},{name:"education",img:"education.jpg",link:"/education"}]
 
 const Industries = () => {
   return (
@@ -12,10 +12,10 @@ const Industries = () => {
     <p className='text-lg ss:text-xl  mb-6 text-textGrey'>QSR  HEALTHCARE  FITNESS  PET CARE  BANKS  RETAIL</p>
   </div>
     
-    <div className='flex flex-col md:grid md:grid-cols-3 md:grid-flow-row mx-10 gap-5 gap-x-4 gap-y-4'>
+    <div className='flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 mx-10 gap-5 gap-x-4 gap-y-4 items-stretch justify-items-stretch'>
 
       {
-        details.map((item)=><Card name={item.name} img={item.img}></Card>)
+        details.map((item)=><Card props={item}></Card>)
       }
     </div>
     </div>
