@@ -8,7 +8,7 @@ export const projectData = [
                 location:"The Leela Kovalam, A Raviz Hotel, Beach Rd, Thiruvananthapuram, Kerala 695527",
                 budget:"298789",
                 projectArea:"chennai",
-                projectBrief:" Open your Google Form and click on the SEND button at the top right corner. Send form popup screen will be displayed. Click on <> embed option and copy the HTML code. Paste this HTML code in the webpage where you want to embed the form. ",
+                projectBrief:" Open your Google Form and click on the SEND button at the top.Send form popup screen will be displayed. Click on <> embed option and copy the HTML code. Paste this HTML code in the webpage where you want to embed the form. ",
                 
             },
             {
