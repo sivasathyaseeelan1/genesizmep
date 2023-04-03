@@ -15,8 +15,8 @@ const AboutUs = () => {
     >
     <div className='mx-10'>
     <div className=' text-2xl ss:text-3xl md:text-5xl mb-7'><h2>About us</h2></div>
-    <div className='text-lg ss:text-xl  mb-7 text-textGrey'><p>We are one of the fastest growing MEP design firms in the franchise construction industry. We have worked with more than 100+ leading franchise brands & completed over 1000+ projects across multiple sectors. We pride ourselves on having a fast turnaround while providing cost effective solutions. 
-    We are licensed in 50 states and are your one stop shop for all MEP design needs.</p></div>
+    <div className='text-lg ss:text-xl  mb-7 text-textGrey'><p>We are one of the franchise construction industry's fastest growing MEP design firms. 
+    We have worked with over 100 leading franchise brands and completed over 1000 projects in a variety of industries. We take pride in providing quick turnaround while remaining cost effective. We are licenced in all 50 states and can meet all of your MEP design needs</p></div>
     </div>
     <div>
       <img src='public/assets/homepage/about_us_image.webp'></img>

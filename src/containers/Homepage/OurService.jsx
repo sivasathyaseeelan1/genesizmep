@@ -5,19 +5,23 @@ const OurService = ()=>{
         name:"HVAC",
         img: "HVAC.jpg",
         background:"hvac",
+        url:"/hvac"
     },
     {
-        name:"FireFighting",
+        name:"FireProtection",
         img: "Fire.jpg",
         background:"fire",
+        url:"/fireprotection"
     },{
         name:"Electrical",
         img: "Electrical.jpg",
         background:"elec",
+        url:"/electrical",
     },{
         name:"Plumbing",
         img: "Plumbing.jpg",
         background:"plum",
+        url:"/plumbing",
     }
 
 

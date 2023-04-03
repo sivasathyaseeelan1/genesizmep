@@ -14,24 +14,24 @@ import "./App.css"
 const App = () => {
   
   const landingData = [{name:"MECHANICAL - HVAC ENGINEERING SERVICES",
-  details:"Nearby Engineers prepares custom HVAC system solutions tailored to your needs, maximizing energy efficiency and minimizing construction cost",
+  details:"Genesiz creates custom HVAC system solutions that are tailored to your specific requirements, maximising energy efficiency and lowering construction costs.",
   className:"hvac",
 
 },
   
 {
     name:"ELECTRICAL ENGINEERING SERVICES",
-    details:"Today's buildings have more electrical components than ever. From low to high voltage building systems, normal and emergency power, we have your solution.",
+    details:"Buildings today contain more electrical components than ever before. We have your solution for low to high voltage building systems, as well as normal and emergency power.",
     className:"electrical",
 },
 {
     name:"PLUMBING ENGINEERING & DESIGN SERVICES",
-    details:"Our speciality plumbing solutions are designed with efficiency, functionality, and longevity in mind.",
+    details:"Our specialty plumbing solutions are intended to be efficient, functional, and long-lasting.",
     className:"plumbing"
 },
 {
     name:"FIRE PROTECTION ENGINEERING SERVICES",
-    details:"In high-rise New York buildings, fire can do a lot of damage - fast. Our systems call the fire department at first sign of smoke to help keep you and your building safe.",
+    details:"Fire can cause significant damage in high-rise New York buildings in a short period of time. To help keep you and your building safe, our systems alert the fire department at the first sign of smoke.",
     className:"fire",
 }
 

@@ -39,6 +39,7 @@ module.exports = {
       poppins: ['Poppins', 'sans-serif'],
       jost: ['jost','serif'],
       anton: ['anton','sans-serif'],
+      montserrat:['Montserrat','sans-serif']
       
     }
   },

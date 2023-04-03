@@ -1,12 +1,9 @@
 import React from 'react'
-import Landing from '../containers/RequestProposal/Landing';
-import Form from '../containers/RequestProposal/Form';
-
+import RequestForm from '../containers/Request/RequestForm'
 const RequestPage = () => {
   return (
-    <div>
-      <Landing></Landing>
-      <Form></Form>
+    <div className=' md:mt-40'>
+     <RequestForm></RequestForm>
     </div>
   )
 }
