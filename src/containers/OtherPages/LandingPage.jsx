@@ -5,7 +5,7 @@ const LandingPage = ({props}) => {
     <div className={`flex flex-col  items-stretch py-20 px-10 md:mt-40 ${props.className}`}  >
         
         <div className=' flex flex-col gap-3 text-left opacity-100 z-10 '>
-            <h6 className=' text-2xl font-jost font-bold'>NY ENGINEERS</h6>
+            <h6 className=' text-2xl font-jost font-bold'>GENESIZ MEP</h6>
             <h1 className=' uppercase text-6xl font-bold'>
                 {props.name}
             </h1>

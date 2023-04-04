@@ -19,7 +19,7 @@ const ClientPage = () => {
     
     
     >
-    <div className=' text-2xl ss:text-3xl md:text-5xl mb-7  ' ><h2>WHY NY ENGINEERS
+    <div className=' text-2xl ss:text-3xl md:text-5xl mb-7 uppercase  ' ><h2>WHY Genesiz mep
     </h2></div>
     
 

@@ -29,12 +29,12 @@ const Footer = () => {
             <h4 className={headerStyle}>projects</h4>
             <div className=' w-4 h-[1.5px] bg-textOrange'></div>
             <div className={`flex flex-col  ${itemStyle}`}>
-            <a href='/projects/hotel'>hotel </a>
-            <a href='/projects/office'>office</a>
-            <a href='/projects/education'>education</a>
-            <a href='/projects/airport'>airport</a>
-            <a href='/projects/mall-stadium'>malls and stadium</a>
-            <a href='/projects/healthcare'> healthcare</a>
+            <a href='/hotel'>hotel </a>
+            <a href='/office'>office</a>
+            <a href='/education'>education</a>
+            <a href='/airport'>airport</a>
+            <a href='/mall-stadium'>malls and stadium</a>
+            <a href='/healthcare'> healthcare</a>
             
             
             </div>
@@ -44,8 +44,8 @@ const Footer = () => {
             <h4 className={headerStyle}>COMPANY</h4>
             <div className=' w-4 h-[1.5px] bg-textOrange'></div>
             <div className={`flex flex-col ${itemStyle}`}>
-            <a>CAREER </a>
-            <a>ABOUT US</a>
+            <a href='/contact'>CAREER</a>
+            <a href='/about'>ABOUT US</a>
             <a>FAQ'S</a>
             </div>
            
