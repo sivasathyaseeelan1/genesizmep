@@ -8,7 +8,7 @@ export const projectData = [
                 location:"The Leela Kovalam, A Raviz Hotel, Beach Rd, Thiruvananthapuram, Kerala 695527",
                 budget:"298789",
                 projectArea:"chennai",
-                projectBrief:" Open your Google Form and click on the SEND button at the top right corner. Send form popup screen will be displayed. Click on <> embed option and copy the HTML code. Paste this HTML code in the webpage where you want to embed the form. ",
+                projectBrief:" Open your Google Form and click on the SEND button at the top.Send form popup screen will be displayed. Click on <> embed option and copy the HTML code. Paste this HTML code in the webpage where you want to embed the form. ",
                 
             },
             {
@@ -27,7 +27,7 @@ export const projectData = [
     details:[
         {
             name: "Sample2",
-            img:"../public/assets/ourprojects.jpg",
+            img:"../public/assets/Projects/office/squarefoot.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
@@ -35,7 +35,7 @@ export const projectData = [
         },
         {
             name: "Sample2",
-            img:"../public/assets/ourprojects.jpg",
+            img:"../public/assets/Projects/office/uber.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
@@ -43,15 +43,7 @@ export const projectData = [
         },
         {
             name: "Sample2",
-            img:"../public/assets/ourprojects.jpg",
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
-            name: "Sample2",
-            img:"../public/assets/ourprojects.jpg",
+            img:"../public/assets/Projects/office/nagainfo.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
@@ -60,27 +52,19 @@ export const projectData = [
     ],
 },
 {
-    title:"Education ENGINEERING PROJECTS",
+    title:"EDUCATION ENGINEERING PROJECTS",
     details:[
         {
+            name: "Sample2",
+            img:"../public/assets/Projects/education/RSET.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
             projectBrief:" this is a project brief ",
         },
         {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
+            name: "Sample2",
+            img:"../public/assets/Projects/education/choiceschool.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
@@ -92,24 +76,16 @@ export const projectData = [
     title:"AIRPORT ENGINEERING PROJECTS",
     details:[
         {
+            name: "Sample2",
+            img:"../public/assets/Projects/airport/TRVdomestic.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
             projectBrief:" this is a project brief ",
         },
         {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
+            name: "Sample2",
+            img:"../public/assets/Projects/airport/TRVinternational.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
@@ -117,27 +93,19 @@ export const projectData = [
         },
     ],
 },{
-    title:"Malls and Stadium",
+    title:"MALLS AND STADIUM ENGINEERING PROJECTS",
     details:[
         {
+            name: "Sample2",
+            img:"../public/assets/Projects/malls and stadium/mall-of-travancore.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
             projectBrief:" this is a project brief ",
         },
         {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
+            name: "Sample2",
+            img:"../public/assets/Projects/malls and stadium/stadium.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
@@ -146,27 +114,11 @@ export const projectData = [
     ],
 },
 {
-    title:"healthcare",
+    title:"HEALTHCARE ENGINEERING PROJECTS",
     details:[
         {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
-            location:"India",
-            budget:"298789",
-            projectArea:"chennai",
-            projectBrief:" this is a project brief ",
-        },
-        {
+            name: "Sample2",
+            img:"../public/assets/Projects/healthcare/astermedcity.jpg",
             location:"India",
             budget:"298789",
             projectArea:"chennai",
