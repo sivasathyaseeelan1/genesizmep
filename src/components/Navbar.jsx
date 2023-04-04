@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import useMediaQuery from '../hooks/useMediaquery';
+import useMediaQuery from '../hooks/useMediaQuery';
 import {Plus} from '@styled-icons/bootstrap';
 import { Close,Menu, } from '@styled-icons/material';
 import Dropdown from './Dropdown';
