@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing from '../containers/ContactPage/Landing';
-import SecondPage from '../containers/ContactPage/secondPage';
+import SecondPage from '../containers/ContactPage/SecondPage';
 import ThirdPage from '../containers/ContactPage/ThirdPage';
 import FourthPage from '../containers/ContactPage/FourthPage';
 import MapPage from '../containers/ContactPage/MapPage';
