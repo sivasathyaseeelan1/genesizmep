@@ -9,7 +9,7 @@ const OnDemandEng = () => {
                 <p className='mb-4 text-textGrey'>Not every MEP design challenge necessitates an entire engineering team, lengthy proposals, and lengthy discussion hours. 
                 Perhaps your team requires additional assistance, authorities require letters, or the architect requires drawings to be reviewed by experts. In such cases, Genesiz can be your partner.</p>
             <p className='mb-4'><strong>Get engineering help within one week, in 3 easy steps with our On Demand Engineering Services.</strong></p>
-               <a className=' flex justify-center items-center'> <button className=' rounded-xl text-center px-4 py-3 bg-black text-white hover:bg-textOrange hover:scale-110 transition-all duration-300'>Get your design done in record time</button></a>
+               <a href='/requestaproposal' className=' flex justify-center items-center'> <button className=' rounded-xl text-center px-4 py-3 bg-black text-white hover:bg-textOrange hover:scale-110 transition-all duration-300'>Get your design done in record time</button></a>
             </div>
             <div>
                 <img className=' mx-auto md:min-w-[300px]' src='/public/assets/homepage/VES.webp'></img>

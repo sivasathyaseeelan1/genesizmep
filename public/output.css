@@ -1067,6 +1067,11 @@ video {
   row-gap: 1.5rem;
 }
 
+.gap-x-5{
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -1772,10 +1777,6 @@ p{
     margin-top: 10rem;
   }
 
-  .md\:mt-60{
-    margin-top: 15rem;
-  }
-
   .md\:block{
     display: block;
   }
@@ -1814,6 +1815,10 @@ p{
 
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:grid-rows-2{

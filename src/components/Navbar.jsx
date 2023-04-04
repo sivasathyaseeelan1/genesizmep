@@ -42,7 +42,7 @@ const Navbar = ({isTopPage}) => {
          <a className=' flex gap-3 items-center' href='/'><img className=' h-12 w-12' src='public/assets/logo1.png'></img>
          <div>
          <h1 className='text-lg ss:text-2xl'>Genesiz MEP</h1> 
-         <p className=' md:text-[10px] text-[6px]'>HVAC|ELECTRICAL|FIRE FIGHTING|PLUMBING</p>
+         <p className=' md:text-[10px] text-[6px]'>HVAC | ELECTRICAL | FIRE FIGHTING | PLUMBING</p>
          </div>
          
          </a>

@@ -23,18 +23,18 @@ const ClientPage = () => {
     </h2></div>
     
 
-    <div ><a><button className=' bg-black text-white px-5 text-lg ss:text-xl md:text-2xl  py-2 rounded-lg mb-5'>Get you quote</button></a></div>
+    <div ><a href='/requestaproposal'><button className=' bg-black text-white px-5 text-lg ss:text-xl md:text-2xl  py-2 rounded-lg mb-5'>Get you quote</button></a></div>
     </motion.div>
     
 
         <div className='flex flex-col '>
-            <div className='bg-black flex-1 py-5 text-white flex flex-col justify-center items-center '><h2 className='text-xl ss:text-3xl md:text-4xl'>1000+</h2>
+            <div className='bg-black flex-1 py-5 text-white flex flex-col justify-center items-center '><h2 className='text-xl ss:text-3xl md:text-4xl'>300+</h2>
             <p className='text-sm ss:text-lg'>Projects completed</p>
             </div>
-            <div className='bg-white flex-1 py-5 text-black flex flex-col justify-center items-center'><h2 className='text-xl ss:text-3xl md:text-4xl'>50%</h2>
+            <div className='bg-white flex-1 py-5 text-black flex flex-col justify-center items-center'><h2 className='text-xl ss:text-3xl md:text-4xl'>80%</h2>
             <p>faster Turnaround</p>
             </div>
-            <div className='bg-black flex-1 py-5 text-white flex flex-col justify-center items-center'><h2 className='text-xl ss:text-3xl md:text-4xl'>80%</h2>
+            <div className='bg-black flex-1 py-5 text-white flex flex-col justify-center items-center'><h2 className='text-xl ss:text-3xl md:text-4xl'>90%</h2>
             <p>First Time Approval</p>
             </div>
         </div>

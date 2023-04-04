@@ -9,11 +9,10 @@ const Landing = () => {
                 <h1 className=' font-anton text-6xl mb-4'>OUR CONTACT</h1>
                 <p className=' font-jost text-2xl'>We respond on the same day!</p>
             </div>
-            <div className=' font-jost text-left flex flex-col gap-4 text-white px-5'>
-              <p className=' text-2xl'>55 Broad Street, 4th Floor, New York,NY, 10004</p>
-              <h4 className=' text-3xl font-semibold'>212-575-5300</h4>
-              <p className=' text-2xl'>info@ny-engineers.com</p>
-              <p className=' text-2xl'>www.ny-engineers.com</p>
+            <div className=' font-jost  flex flex-col justify-center items-center py-5 text-left gap-4 text-white px-5'>
+              <h4 className=' text-3xl font-semibold'>+91-7736188669</h4>
+              <p className=' text-2xl'>genesizmeppvtltd@gmail.com</p>
+              <p className=' text-2xl'>www.genesizmep.in</p>
               <img className=' mx-auto' src='public/assets/contactPage/icon.webp'></img>
             </div>
 

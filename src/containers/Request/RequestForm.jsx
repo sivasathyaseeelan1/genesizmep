@@ -235,6 +235,7 @@ const RequestForm = ({ data, handleSave, }) => {
                <option value="Electrical">Electrical</option>
                <option value="Fire protection">Fire protection</option>
                <option value="Plumbing">Plumbing</option>
+               <option value="All MEP">All MEP</option>
             </select>
              <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="type">Select the type of project*</label>
           
