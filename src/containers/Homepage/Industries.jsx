@@ -5,7 +5,7 @@ const details = [{name:"hotel",img:"hotel.jpg", link:"/hotel"},{name:"HEALTHCARE
 
 const Industries = () => {
   return (
-    <div className='mb-16'>
+    <div className='mb-16' id='#industries'>
 
   <div className='flex flex-col justify-center items-center '>
     <h2 className=' text-2xl ss:text-3xl md:text-5xl mb-7 py-8 uppercase text-textOrange'>Genesiz mep engineers</h2>

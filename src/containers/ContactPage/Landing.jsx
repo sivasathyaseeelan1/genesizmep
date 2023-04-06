@@ -1,9 +1,16 @@
 import React from 'react'
 import Contact from '../Homepage/Contact'
+import { useFirebase } from '../../context/firebase'
 
 const Landing = () => {
+
+  const firebase = useFirebase()
+  async function addData(userdata){
+        await firebase.addDocument(userdata);
+  }
+
   return (
-    <div className='flex flex-col gap-10 md:grid md:grid-cols-2  pt-[75px] md:py-20'>
+    <div className='flex flex-col gap-10 md:grid md:grid-cols-2  pt-[75px] md:py-[125px]'>
         <div className=' bg-black py-10 col-start-1 col-end-2 '>
             <div className=' py-4 px-2  bg-textOrange text-white text-center '>
                 <h1 className=' font-anton text-6xl mb-4'>OUR CONTACT</h1>
@@ -26,7 +33,7 @@ const Landing = () => {
 <p>GET YOUR QUOTE TODAY!</p>
 </div>
 
-<Contact > </Contact>
+<Contact handleSave={addData} > </Contact>
 
 
 

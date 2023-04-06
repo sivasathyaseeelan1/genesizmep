@@ -2,7 +2,7 @@ import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
 
-const ContactForm = ({ data, handleSave, }) => {
+const ContactForm = ({  handleSave, }) => {
     const InputStyles = "bottom-1 rounded-md  ";
   const ContactSchema = Yup.object().shape({
     firstName: Yup.string()
@@ -26,7 +26,6 @@ const ContactForm = ({ data, handleSave, }) => {
     .max(20, 'Too Long!')
     .required('Required'),
     details: Yup.string().min(5, 'Too Short!')
-    .required('Required'),
   });
   
     return (
@@ -44,11 +43,11 @@ const ContactForm = ({ data, handleSave, }) => {
           state:'',
           details:'',
         }}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, onSubmitProps) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             handleSave(values);
-            setSubmitting(false);
+            onSubmitProps.resetForm();
           }, 400);
         }}
        validationSchema={ContactSchema}
@@ -103,7 +102,7 @@ const ContactForm = ({ data, handleSave, }) => {
               
              />
               {errors.lastName && touched.lastName ? (
-             <div>{errors.lastName}</div>
+             <div className=" text-white">{errors.lastName}</div>
            ) : null}
         
              
@@ -119,7 +118,7 @@ const ContactForm = ({ data, handleSave, }) => {
               
              />
              {errors.email && touched.email ? (
-             <div>{errors.email}</div>
+             <div className=" text-white">{errors.email}</div>
            ) : null}
           
             
@@ -135,7 +134,7 @@ const ContactForm = ({ data, handleSave, }) => {
              
             />
              {errors.phoneNumber && touched.phoneNumber ? (
-             <div>{errors.phoneNumber}</div>
+             <div className=" text-white">{errors.phoneNumber}</div>
            ) : null}
              
              <input
@@ -150,7 +149,7 @@ const ContactForm = ({ data, handleSave, }) => {
               
              />
             {errors.companyName && touched.companyName ? (
-             <div>{errors.companyName}</div>
+             <div className=" text-white">{errors.companyName}</div>
            ) : null}
             
             <input
@@ -165,7 +164,7 @@ const ContactForm = ({ data, handleSave, }) => {
              
             />
            {errors.city && touched.city ? (
-             <div>{errors.city}</div>
+             <div className=" text-white">{errors.city}</div>
            ) : null}
             
             <input
@@ -180,7 +179,7 @@ const ContactForm = ({ data, handleSave, }) => {
              
             />
           {errors.state && touched.state ? (
-             <div>{errors.state}</div>
+             <div className=" text-white">{errors.state}</div>
            ) : null}
              
              <textarea
@@ -195,7 +194,7 @@ const ContactForm = ({ data, handleSave, }) => {
                   
              />
                 {errors.details && touched.details ? (
-             <div>{errors.details}</div>
+             <div className=" text-white">{errors.details}</div>
            ) : null}
          </div>
               <button

@@ -2,7 +2,7 @@ import React from 'react'
 import WorkingCard from '../../components/WorkingCard'
 
 const Working = () => {
-  const working = [{name:"Step 1",details:"You send us project requirements and floor plan.",orange:true},{name:"Step 2",details:"Our experts will work on the design as per franchise design standard and local state codes.",orange:false},{name:"Step 3",details:"We deliver the MEP design permit set to you.",orange:true},]
+  const working = [{name:"Step 1",details:"You send us project requirements and floor plan.",orange:true},{name:"Step 2",details:"Our experts will work as per the design.",orange:false},{name:"Step 3",details:"We deliver the MEP design permit set to you.",orange:true},]
     return (
     <div>
         <div className='flex flex-col justify-center items-center mb-10'>

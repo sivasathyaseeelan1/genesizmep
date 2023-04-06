@@ -2,7 +2,7 @@ import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
 
-const Contact = ({ data, handleSave, }) => {
+const Contact = ({ handleSave }) => {
     const InputStyles = " relative bottom-1 rounded-md p-2  border-solid border-[2px]";
   const ContactSchema = Yup.object().shape({
     firstName: Yup.string()
@@ -17,8 +17,8 @@ const Contact = ({ data, handleSave, }) => {
     phoneNumber: Yup.string().required('Required'),
     companyName: Yup.string()
     .min(2, 'Too Short!')
-    .max(50, 'Too Long!')
-    .required('Required'),
+    .max(50, 'Too Long!'),
+
     city: Yup.string().min(2, 'Too Short!')
     .max(20, 'Too Long!')
     .required('Required'),
@@ -49,11 +49,11 @@ const Contact = ({ data, handleSave, }) => {
           state:'',
           details:'',
         }}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, onSubmitProps) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             handleSave(values);
-            setSubmitting(false);
+            onSubmitProps.resetForm();
           }, 400);
         }}
        validationSchema={ContactSchema}

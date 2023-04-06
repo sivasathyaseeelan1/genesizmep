@@ -3,8 +3,8 @@ import RequestedServices from '../../components/OtherPages/RequestedServices'
 import Service from '../../components/OtherPages/Service';
 
 const SixthPage = () => {
-  const requestedServices = ["QSR franchise design","Retail franchise design","Passive house design","Fitness franchise design"
-  ,"EV charging tation design","Hotel MEP deign","Residential MEP deign","Healthcare MEP deign","Office MEP deign"]
+  const requestedServices = ["Mall MEP design","Commercial MEP design","Apartment MEP design","Gym MEP design"
+  ,"Industrial MEP design","Hotel MEP deign","Residential MEP deign","Healthcare MEP deign","Office MEP deign"]
     return (
     <div className=' bg-black  text-white text-center py-20 md:px-40 px-20  '>
         <h2 className='md:text-5xl text-xl uppercase'>NEED A SPECIFIC SERVICE SOLUTION FROM US?</h2>

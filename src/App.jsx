@@ -10,6 +10,7 @@ import RequestPage from './pages/RequestPage';
 import Landing from './containers/projects/Landing';
 import { projectData } from './data';
 import "./App.css"
+import SocialIcon from './components/SocialIcon';
 
 const App = () => {
   
@@ -71,6 +72,7 @@ const App = () => {
         <Route path='/healthcare' element={<Landing data={projectData[5]}></Landing>}></Route>
 
       </Routes>
+      <SocialIcon></SocialIcon>
       <Footer></Footer>
       </BrowserRouter>
     </div>

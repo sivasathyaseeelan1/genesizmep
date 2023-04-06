@@ -22,8 +22,8 @@ with zero change orders</p>
     <h4>BRAND PROMISE</h4>
     {/* <p>To be the trailblazers in the Construction Engineering industry by being fast and adaptable to the changing needs</p> */}
     <ul>
-        <li>80% first time approval</li>
-<li>50% faster turnaround</li>
+        <li>90% first time approval</li>
+<li>80% faster turnaround</li>
 <li>Zero Change Order</li>
     </ul>
     </div>

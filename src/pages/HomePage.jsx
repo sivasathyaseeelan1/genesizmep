@@ -9,10 +9,17 @@ import OnDemandEng from '../containers/Homepage/OnDemanEng'
 import Contact from '../containers/Homepage/Contact'
 import Footer from '../containers/Homepage/Footer'
 import OurService from '../containers/Homepage/OurService'
-
+import { useFirebase } from '../context/firebase'
 
 
 const Homepage = () => {
+  const firebase = useFirebase()
+  async function addData(userdata){
+        await firebase.addDocument(userdata);
+  }
+
+
+
   return (
     <div>
   
@@ -23,7 +30,7 @@ const Homepage = () => {
       <Industries></Industries>
       <Working></Working>
       <OnDemandEng></OnDemandEng>
-      <Contact></Contact>
+      <Contact handleSave={addData} ></Contact>
 
     
       

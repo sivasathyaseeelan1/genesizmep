@@ -2,6 +2,7 @@ import React from "react";
 import { Formik } from "formik";
 import * as Yup from 'yup';
 
+
 const RequestForm = ({ data, handleSave, }) => {
     const InputStyles = " relative bottom-1 rounded-md p-2  border-solid border-[2px]";
   const ContactSchema = Yup.object().shape({
@@ -25,7 +26,8 @@ const RequestForm = ({ data, handleSave, }) => {
     state: Yup.string().min(2, 'Too Short!')
     .max(20, 'Too Long!')
     .required('Required'),
-    area: Yup.string().required('Required')
+    area: Yup.string().required('Required'),
+    service: Yup.string()
   });
   
     return (
@@ -47,13 +49,13 @@ const RequestForm = ({ data, handleSave, }) => {
           city: '',
           state:'',
           area:'',
-          type:''
+          service:''
         }}
-        onSubmit={(values, { setSubmitting }) => {
+        onSubmit={(values, onSubmitProps) => {
           setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
             handleSave(values);
-            setSubmitting(false);
+            onSubmitProps.resetForm()
             
           }, 400);
         }}
@@ -226,16 +228,20 @@ const RequestForm = ({ data, handleSave, }) => {
 
         
             <select
-            id="type"
-            name='type'
-            value={values.type}
+            id="service"
+            name='service'
+            value={values.service}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            defaultValue={values.service}
             className={`${InputStyles}  w-full uppercase`}
             >
+              <option value="All MEP">All MEP</option>
                <option value="HVAC">HVAC</option>
                <option value="Electrical">Electrical</option>
                <option value="Fire protection">Fire protection</option>
                <option value="Plumbing">Plumbing</option>
-               <option value="All MEP">All MEP</option>
+             
             </select>
              <label className=" absolute left-4 top-[-20px] bg-white px-2 text-red-500" for="type">Select the type of project*</label>
           
