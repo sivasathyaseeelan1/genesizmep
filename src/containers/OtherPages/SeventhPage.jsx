@@ -7,7 +7,7 @@ const SeventhPage = () => {
             <img className=' max-h-12 ' src="public/assets/OtherPages/CallIcon.webp"></img>
             <div className='text-center'>
             <p className=' text-xl font-black uppercase'>CALL US NOW</p>
-            <h3 className=' text-4xl font-semibold'>(786) 788-0295</h3>
+            <h3 className=' text-4xl font-semibold'>+91-868976807696</h3>
             </div>
         </div>
         <h2 className=' uppercase text-5xl text-center'>project portfolio</h2>

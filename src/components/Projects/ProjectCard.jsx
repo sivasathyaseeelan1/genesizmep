@@ -9,7 +9,7 @@ const ProjectCard = ({data}) => {
 
 
  
-    <div className=' bg-slate-300 md:mx-5 flex flex-col md:grid md:grid-cols-3 md:items-end items-center justify-items-center shadow-2xl rounded-tl-3xl rounded-br-3xl '>
+    <div className=' bg-slate-300 md:mx-5 flex flex-col md:grid md:grid-cols-3 md:items-end items-center justify-items-center  shadow-2xl rounded-tl-3xl rounded-br-3xl '>
     
     <div className=' bg-white col-start-1 col-end-2 h-full w-full  flex flex-col justify-center items-center '>
 <h1 className=' font-jost text-4xl font-bold uppercase mb-4'>{data.name}</h1>
@@ -17,17 +17,17 @@ const ProjectCard = ({data}) => {
   <img className=' h-[350px]' src={data.img}></img>
 </div>
    
-<div className=' flex flex-col md:text-right max-w-full box-border  col-start-2 col-end-4  text-center gap-4 font-jost w-max md:px-10 py-7 justify-center items-center rounded-lg'>
+<div className=' flex flex-col md:text-right my-auto max-w-full box-border  col-start-2 col-end-4  text-center gap-4 font-jost w-max md:px-10 py-7 justify-center items-center rounded-lg'>
     
         <p className={tagStyle}>Location</p>
         <p className={contentStyle+` `}>{data.location}</p>
-        <p className={tagStyle}>Budget</p>
+        {/* <p className={tagStyle}>Budget</p>
         <p className={contentStyle}>{data.budget}</p>
 
         <p className={tagStyle}>Project Area</p>
         <p className={contentStyle}>{data.projectArea}</p>
         <p className={tagStyle}>Project Brief</p>
-        <p className={contentStyle}>{data.projectBrief}</p>
+        <p className={contentStyle}>{data.projectBrief}</p> */}
 
      
 

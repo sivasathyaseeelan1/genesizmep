@@ -9,36 +9,57 @@ import data from './Navbardata';
 const Navbar = ({isTopPage}) => {
   const [isMenuOpen,setIsMenuOpen] = useState(false);
   const isAboveMediumScreen = useMediaQuery("(min-width:1050px)");
-  // const [isScrolled,setscroll]= useState(true)
+  const [isScrolled,setscroll]= useState(false);
   // const EngDrop = ["engineering","engineering","engineering","engineering",]
   // window.onscroll = function(e){
   //   setscroll(true);
   //   console.log(isScrolled)
   // }
 
-  // useEffect(()=>{
-  //     if(window.screenY===0){
-  //         setscroll(true)
-          
-  //     }
-  //     else if(window.screenY!==0){
-  //       setscroll(false);
-  //     }
-  //     console.log(window.screenY)
-  // },[window.scrollY])
+  useEffect(()=>{
+    window.addEventListener("scroll", function(){
+      console.log(isScrolled)
+      console.log(isScrolled)
+          if(this.window.pageYOffset===0){
+            setscroll(false);
+          }else{
+            setscroll(true);
+          }
+    })
+
+    return ()=>window.removeEventListener("scroll", function(){
+      if(this.window.pageYOffset===0){
+        setscroll(false);
+      }else{
+        setscroll(true);
+      }
+})
+
+
+},[isScrolled])
+
+
+console.log(isScrolled);
+
 
   return (
     <div>
 
   
-    <div className=' font-montserrat bg-black text-white sticky md:fixed top-0 left-0  nav flex md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-50 '>
-        
-        <div className=' max-w-[280px]'>
-         {/* <p className={` md:text-2xl text-lg font-anton pb-5 `}>gg@gmail.com</p> */}
-      
+    <div className=' font-montserrat bg-black text-white sticky md:fixed top-0 left-0  nav flex flex-col md:justify-evenly justify-between items-center  min-h-max py-5 w-full px-3  z-50 '>
     
+    <div className={`${isScrolled?"hidden":"visible"} pb-1 transition-all flex gap-5 w-full mb-3 justify-center  mt-0 text-bgGrey3  border-b-bgGrey3 border-b-[0.5px]`} >
+        <p className={`  text-lg font-anton  `}>genesizmeppvtltd@gmail.com</p>
       
+      <p className={` text-lg  font-anton text-right`}>+91-7736188669</p>
+        </div>
         
+    <div className=' flex   justify-between w-full'>
+
+        <div className=' max-w-[280px]'>
+        
+      
+      
          <a className=' flex gap-3 items-center' href='/'><img className=' h-12 w-12' src='public/assets/logo1.png'></img>
          <div>
          <h1 className='text-lg ss:text-2xl'>Genesiz MEP</h1> 
@@ -46,17 +67,18 @@ const Navbar = ({isTopPage}) => {
          </div>
          
          </a>
+
          {/* <img src='public/assets/homepage/New-NY-Logos-03.webp'></img> */}
         </div>
-        {/* <div className=' flex flex-col justify-items-end items-end'>
-        <p className={` md:text-2xl text-lg pb-5 font-anton text-right`}>868976807696</p> */}
+        <div className=' flex flex-col gap-3  '>
+        
        
         {
           isAboveMediumScreen? (<div className='flex gap-7 items-center text-xl font cursor-pointer'>
           
           <div><a href='/'>Home </a></div>
             <div className='group/item1'><a >Engineering <ChevronDown size={12}></ChevronDown></a>
-            <div className=' border-t-solid  border-t-textOrange border-t-8 group-hover/item1:scale-100 transition-all rounded-xl scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
+            <div className=' border-t-solid  border-t-textOrange border-t-8 group-hover/item1:scale-100  rounded-xl scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
         {
           
           data[1].data.map((item)=><a href={item.url} className='hover:text-textOrange text-slate-700 flex justify-between border-b-[1px]  border-dotted border-b-black z-2000 '><p>{item.name} </p> </a>)
@@ -65,7 +87,7 @@ const Navbar = ({isTopPage}) => {
             </div>
             
             <div className='group/item1'><a >Projects <ChevronDown size={12}></ChevronDown></a>
-            <div className=' border-t-solid  border-t-textOrange border-t-8 group-hover/item1:scale-100 transition-all rounded-xl scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
+            <div className=' border-t-solid  border-t-textOrange border-t-8 group-hover/item1:scale-100 rounded-xl scale-0 p-5 min-w-[200px] items-center bg-white absolute'>
         {
           
           data[2].data.map((item)=><a href={item.url} className='hover:text-textOrange border-b-[1px]  border-dotted border-b-black text-slate-700 flex justify-between z-2000 '><p>{item.name} </p>  </a>)
@@ -86,8 +108,9 @@ const Navbar = ({isTopPage}) => {
           
         </>)
         }
-        {/* </div> */}
+        </div>
         
+        </div>
       
        
     

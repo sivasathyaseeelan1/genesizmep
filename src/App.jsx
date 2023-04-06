@@ -16,6 +16,7 @@ const App = () => {
   const landingData = [{name:"MECHANICAL - HVAC ENGINEERING SERVICES",
   details:"Genesiz creates custom HVAC system solutions that are tailored to your specific requirements, maximising energy efficiency and lowering construction costs.",
   className:"hvac",
+  img:"HVAC.jpg",
 
 },
   
@@ -23,16 +24,20 @@ const App = () => {
     name:"ELECTRICAL ENGINEERING SERVICES",
     details:"Buildings today contain more electrical components than ever before. We have your solution for low to high voltage building systems, as well as normal and emergency power.",
     className:"electrical",
+    img:"Electrical.jpg",
 },
 {
     name:"PLUMBING ENGINEERING & DESIGN SERVICES",
     details:"Our specialty plumbing solutions are intended to be efficient, functional, and long-lasting.",
-    className:"plumbing"
+    className:"plumbing",
+    img:"Plumbing.jpg",
 },
 {
     name:"FIRE PROTECTION ENGINEERING SERVICES",
     details:"Fire can cause significant damage in high-rise New York buildings in a short period of time. To help keep you and your building safe, our systems alert the fire department at the first sign of smoke.",
     className:"fire",
+    img:"Fire.jpg",
+    
 }
 
 ]

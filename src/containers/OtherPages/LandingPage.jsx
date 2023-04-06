@@ -1,10 +1,20 @@
 import React from 'react'
 
 const LandingPage = ({props}) => {
+  const background = `../public/assets/homePage/OurServices/${props.img}`;
+  const styles = {
+    backgroundImage: `url(${background})` ,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+ 
+  backgroundPosition: 'center',
+
+}
+
   return (
-    <div className={`flex flex-col  items-stretch py-20 px-10 md:mt-40 ${props.className}`}  >
+    <div style={styles} className={`flex  flex-col max-h-max items-stretch py-40 px-10 md:mt-[135px] `}  >
         
-        <div className=' flex flex-col gap-3 text-left opacity-100 z-10 '>
+        <div className=' flex flex-col gap-3 text-left opacity-100 z-10  text-bgGrey3 '>
             <h6 className=' text-2xl font-jost font-bold'>GENESIZ MEP</h6>
             <h1 className=' uppercase text-6xl font-bold'>
                 {props.name}
