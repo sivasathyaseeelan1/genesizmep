@@ -6,18 +6,18 @@ import { getAnalytics } from "firebase/analytics";
 // Import Required Firebase Utility
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA4DvpBZ-fbtGwweCF9WzAnDMnBDdVsV1s",
-  authDomain: "genesiz-mep.firebaseapp.com",
-  projectId: "genesiz-mep",
-  storageBucket: "genesiz-mep.appspot.com",
-  messagingSenderId: "65259366702",
-  appId: "1:65259366702:web:a18b5f04b71f2fa256f2bf",
-  measurementId: "G-VT1TT003N0"
+  apiKey: "AIzaSyC_5ruSgNX-8XKWkTybXKzHtTMS1y2sfHY",
+  authDomain: "genesiz-99896.firebaseapp.com",
+  projectId: "genesiz-99896",
+  storageBucket: "genesiz-99896.appspot.com",
+  messagingSenderId: "453133674105",
+  appId: "1:453133674105:web:ade39bffb50ac46d4156a8",
+  measurementId: "G-21SRR6P715"
 };
 
 const FirebaseContext = createContext(null);
 const firebaseApp = initializeApp(firebaseConfig);
-
+const analytics = getAnalytics(firebaseApp);
 // Create an instance of the imported firebase utility
 
 const db = getFirestore(firebaseApp);
